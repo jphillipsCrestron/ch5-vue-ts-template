@@ -1,0 +1,35 @@
+{
+  "name": "ch5-vue-ts-template",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "build:prod": "vite build --mode production",
+    "archive": "ch5-cli archive -p ch5-vue-ts-template -d dist -o archive",
+    "deploy:mobile": "ch5-cli deploy -p -H 0.0.0.0 -t mobile archive/ch5-vue-ts-template.ch5z",
+    "deploy:xpanel": "ch5-cli deploy -p -H 192.168.1.223 -t web archive/ch5-vue-ts-template.ch5z",
+    "deploy:panel": "ch5-cli deploy -p -H 192.168.1.22 -t touchscreen archive/ch5-vue-ts-template.ch5z --slow-mode",
+    "lint": "eslint . --ext .ts,.vue --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@crestron/ch5-crcomlib": "^2.8.0",
+    "@crestron/ch5-webxpanel": "^2.8.0",
+    "eruda": "^3.0.1",
+    "vue": "^3.4.15"
+  },
+  "devDependencies": {
+    "@crestron/ch5-shell-utilities-cli": "^2.8.0",
+    "@crestron/ch5-utilities-cli": "^2.0.0",
+    "@types/node": "^20.11.19",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0",
+    "vite-plugin-singlefile": "^2.0.0",
+    "vite-plugin-static-copy": "^1.0.1",
+    "vue-tsc": "^1.8.27"
+  }
+}
