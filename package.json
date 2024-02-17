@@ -10,8 +10,8 @@
     "build:prod": "vite build --mode production",
     "archive": "ch5-cli archive -p ch5-vue-ts-template -d dist -o archive",
     "deploy:mobile": "ch5-cli deploy -p -H 0.0.0.0 -t mobile archive/ch5-vue-ts-template.ch5z",
-    "deploy:xpanel": "ch5-cli deploy -p -H 192.168.1.223 -t web archive/ch5-vue-ts-template.ch5z",
-    "deploy:panel": "ch5-cli deploy -p -H 192.168.1.22 -t touchscreen archive/ch5-vue-ts-template.ch5z --slow-mode",
+    "deploy:xpanel": "ch5-cli deploy -p -H 0.0.0.0 -t web archive/ch5-vue-ts-template.ch5z",
+    "deploy:panel": "ch5-cli deploy -p -H 0.0.0.0 -t touchscreen archive/ch5-vue-ts-template.ch5z --slow-mode",
     "lint": "eslint . --ext .ts,.vue --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

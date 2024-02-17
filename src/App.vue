@@ -26,7 +26,7 @@ export default defineComponent({
 
     const webXPanelConfig = {
       ipId: '0x03',
-      host: '192.168.1.223',
+      host: '0.0.0.0',
       roomId: '',
       authToken: ''
     };
