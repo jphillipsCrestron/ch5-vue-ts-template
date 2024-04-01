@@ -55,5 +55,5 @@ export default defineComponent({
 </script>
 
 <style scoped>
-@import './assets/App.css';
+@import './assets/css/App.css';
 </style>
