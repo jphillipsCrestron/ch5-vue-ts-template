@@ -8,7 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "build:prod": "vite build --mode production",
-    "archive": "ch5-cli archive -p ch5-vue-ts-template -d dist -o archive",
+    "archive": "ch5-cli archive -p ch5-vue-ts-template -d dist -o archive -c ./contracts/output/ContractExample/interface/mapping/ContractExample.cse2j",
     "deploy:mobile": "ch5-cli deploy -p -H 0.0.0.0 -t mobile archive/ch5-vue-ts-template.ch5z",
     "deploy:xpanel": "ch5-cli deploy -p -H 0.0.0.0 -t web archive/ch5-vue-ts-template.ch5z",
     "deploy:panel": "ch5-cli deploy -p -H 0.0.0.0 -t touchscreen archive/ch5-vue-ts-template.ch5z --slow-mode",
