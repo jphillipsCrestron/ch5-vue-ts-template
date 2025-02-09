@@ -4,8 +4,9 @@ import { viteSingleFile } from 'vite-plugin-singlefile';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { VitePWA } from 'vite-plugin-pwa';
 
-export default ({ mode }: any) => {
-  const env = loadEnv(mode, process.cwd());
+// https://vite.dev/config/
+export default (config: { mode: string; }) => {
+  const env = loadEnv(config.mode, process.cwd());
   const isDevelopment = env.VITE_APP_ENV === 'development';
 
   return defineConfig({
@@ -44,7 +45,7 @@ export default ({ mode }: any) => {
           }
         ]
       }),
-            // Note that browsers will only allow PWA service workers to work if the server
+      // Note that browsers will only allow PWA service workers to work if the server
       // presents a certificate that is signed by a CA that is trusted by the client machine.
       VitePWA({
         base: '/ch5-vue-ts-template/',
