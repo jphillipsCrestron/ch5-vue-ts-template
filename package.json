@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@crestron/ch5-crcomlib": "^2.11.2",
+    "@crestron/ch5-theme": "^2.11.2",
     "@crestron/ch5-webxpanel": "^2.8.0",
     "eruda": "^3.4.1",
     "vue": "^3.5.13"
