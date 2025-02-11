@@ -1,6 +1,6 @@
 <template>
   <p style="color: white;">Joins</p>
-  <div id="controlGroupWrapper">
+  <div class="controlGroupWrapper">
     <div class="controlGroup">
       <button id="sendDigitalButton" class="btn" @click="sendDigital(!digitalState)">Toggle Digital</button>
       <p id="currentDigitalValue">{{ digitalState }}</p>
@@ -14,7 +14,7 @@
     </div>
   </div>
   <p style="color: white;">Contracts</p>
-  <div id="controlGroupWrapper">
+  <div class="controlGroupWrapper">
     <div class="controlGroup">
       <button id="sendDigitalButton" class="btn" @click="sendDigitalContract(!digitalContractState)">Toggle Digital</button>
       <p id="currentDigitalValue">{{ digitalContractState }}</p>
